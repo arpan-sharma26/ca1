@@ -1,0 +1,13 @@
+<div style="color:goldenrod;">
+    <h3> {{ques1}} </h3> <!--This is string interpolation, 
+        which is used to display TypeScript variable value in HTML.-->
+    <h3> {{description}} </h3><!--This is string interpolation, 
+        which is used to display TypeScript variable value in HTML.-->
+</div>
+<!--In the following h4 HTML tag, attribute binding is used to set the class "container".-->
+<h4 class="container" style="color: hotpink;">List of students studying in the organization</h4>
+<ul style="list-style-type:circle;" >
+    <!--Here i used Angular Directive (For Loop), and here accessing elements 
+        through item iterator variable with keys of objects in an array.-->
+    <li *ngFor="let item of students"> {{item.id}} {{item.name}} {{item.course}} {{item.contact}} </li>
+</ul>

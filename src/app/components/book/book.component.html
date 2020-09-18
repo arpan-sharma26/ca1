@@ -1,0 +1,14 @@
+<div style="color:goldenrod;">
+    <h3> {{ques1}} </h3> <!--String interpolation-->
+    <h3> {{description}} </h3>
+</div>
+
+<ol>
+    <div *ngFor="let var40 of book; index as i"> <!--ngFor Directive used for looping through a book array.-->
+        <!--ngIf directive is used here to style the strings -->
+        <li *ngIf="i==0 || i==2" style="color: red;"> {{var40.b_id}} {{var40.b_title}} {{var40.b_author}} </li>
+        <li *ngIf="i==1 || i==3" style="color: blue;"> {{var40.b_id}} {{var40.b_title}} {{var40.b_author}} </li>
+        <li *ngIf="i==4 || i==5" style="color: green;"> {{var40.b_id}} {{var40.b_title}} {{var40.b_author}} </li>
+        <li *ngIf="i==6" style="color: purple;"> {{var40.b_id}} {{var40.b_title}} {{var40.b_author}} </li>
+    </div>
+</ol>
